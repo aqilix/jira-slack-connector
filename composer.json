@@ -1,0 +1,41 @@
+{
+    "name": "aqilix/jira-slack-connector",
+    "description": "PHP Microservice for connecting between Jira and Slack",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "microservice",
+        "middleware",
+        "php7",
+        "slack",
+        "jira"
+    ],
+    "support": {
+        "email": "dolly.aswin@aqilix.com",
+        "source": "https://github.com/aqilix/zf3-apigilty-oauth2",
+        "issues": "https://github.com/aqilix/zf3-apigilty-oauth2/issues"
+    },
+    "config": {
+        "process-timeout": 5000
+    },
+    "extra": {
+    },
+    "require": {
+        "php": "^7.0",
+        "predis/predis": "1.0.3"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "JiraSlackConnector\\": "src/"
+        }
+    },
+    "autoload-dev": {
+    },
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf"
+    }
+}

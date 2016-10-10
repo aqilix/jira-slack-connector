@@ -1,0 +1,14 @@
+php:
+  build: .
+  dockerfile: Dockerfile
+  ports:
+   - "8080:80"
+  volumes:
+   - .:/var/www
+  links:
+   - redis
+redis:
+  image: redis:3.2.4
+  volumes:
+    - ./docker/redis/data:/data
+  restart: always
