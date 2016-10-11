@@ -1,2 +1,5 @@
 vendor
+composer
+composer.phar
+docker/redis/data
 !docker/redis/data/.gitkeep
